@@ -1,0 +1,32 @@
+#iconSection {
+  display: flex;
+  flex-direction: row;
+  height: 120px;
+  justify-content: space-evenly;
+  margin: 0 4.2vw;
+}
+
+.icon {
+  padding: 15px 0;
+}
+
+#preserve,
+#protect {
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+  #iconSection {
+    height: 259px;
+    margin: 0 20.5vw;
+  }
+
+  .icon {
+    padding: 30px 0;
+  }
+
+  #preserve,
+  #protect {
+    padding: 40px 0;
+  }
+}

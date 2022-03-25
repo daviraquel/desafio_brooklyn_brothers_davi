@@ -1,38 +1,114 @@
-.App {
+:root {
+  /* Colors: */
+  --unnamed-color-389cd6: #389cd6;
+  --white: #ffffff;
+  --dark-gray: #7b7070;
+  --brand-gray: #9d8e8e;
+  --light-gray: #d9d5d5;
+  --red: #ee6381;
+  --green: #309d5f;
+  --unnamed-color-549bd1: #549bd1;
+  --unnamed-color-9d8d8d: #9d8d8d;
+
+  /* Font/text values */
+  --unnamed-font-family-trebuchet-ms: Trebuchet MS, sans serif;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-bold: bold;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-20: 20px;
+  --unnamed-font-size-25: 25px;
+  --unnamed-font-size-31: 31px;
+  --unnamed-font-size-39: 39px;
+  --unnamed-font-size-48: 48px;
+  --unnamed-character-spacing-0-5: 0.5px;
+  --unnamed-character-spacing-0-62: 0.62px;
+  --unnamed-character-spacing-0-78: 0.78px;
+  --unnamed-character-spacing-0-96: 0.96px;
+  --unnamed-character-spacing-0-32: 0.32px;
+  --unnamed-character-spacing-0-4: 0.4px;
+  --unnamed-line-spacing-22: 22px;
+  --unnamed-line-spacing-28: 28px;
+  --unnamed-line-spacing-36: 36px;
+  --unnamed-line-spacing-40: 40px;
+  --unnamed-line-spacing-50: 50px;
+  --unnamed-line-spacing-70: 70px;
+  --text-margin: 40px;
+
+  /* Univesal text styling */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Character Styles */
+h1 {
+  font-family: var(--unnamed-font-family-trebuchet-ms);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-48);
+  line-height: var(--unnamed-line-spacing-70);
+  letter-spacing: var(--unnamed-character-spacing-0-96);
+  color: var(--unnamed-color-549bd1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h3 {
+  font-family: var(--unnamed-font-family-trebuchet-ms);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-31);
+  line-height: var(--unnamed-line-spacing-40);
+  letter-spacing: var(--unnamed-character-spacing-0-62);
+  margin: var(--text-margin) 0;
+  color: var(--unnamed-color-549bd1);
+}
+h4 {
+  font-family: var(--unnamed-font-family-trebuchet-ms);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-25);
+  line-height: var(--unnamed-line-spacing-36);
+  letter-spacing: var(--unnamed-character-spacing-0-5);
+  color: var(--unnamed-color-549bd1);
+}
+
+p {
+  font-family: var(--unnamed-font-family-trebuchet-ms);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-22);
+  letter-spacing: var(--unnamed-character-spacing-0-32);
+  color: var(--unnamed-color-9d8d8d);
+  padding-bottom: var(--text-margin);
+}
+
+.p-large {
+  font-family: var(--unnamed-font-family-trebuchet-ms);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-20);
+  line-height: var(--unnamed-line-spacing-28);
+  letter-spacing: var(--unnamed-character-spacing-0-4);
+  color: var(--unnamed-color-9d8d8d);
+}
+
+@media screen and (min-width: 768px) {
+  h3 {
+    font-family: var(--unnamed-font-family-trebuchet-ms);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-39);
+    line-height: var(--unnamed-line-spacing-50);
+    letter-spacing: var(--unnamed-character-spacing-0-78);
+    color: var(--unnamed-color-549bd1);
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  p {
+    font-family: var(--unnamed-font-family-trebuchet-ms);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-20);
+    line-height: var(--unnamed-line-spacing-28);
+    letter-spacing: var(--unnamed-character-spacing-0-4);
+    color: var(--unnamed-color-9d8d8d);
   }
 }
