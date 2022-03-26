@@ -2,6 +2,43 @@ import preserveIcon from "../img/icons/preserve.png";
 import promoteIcon from "../img/icons/promote.png";
 import protectIcon from "../img/icons/protect.png";
 
+import wellness from "../img/products/wellness.png";
+import active from "../img/products/active.png";
+import agecare from "../img/products/agecare.png";
+
+import sport from "../img/articles/sport.png";
+import smile from "../img/articles/smile.png";
+import droplet from "../img/articles/droplet.png";
+
+export const headerLinks = [
+  { send: "#philosophy", text: "about us", icon: true },
+  { send: "#products", text: "our products", icon: true },
+  { send: "#articles", text: "intimate health", icon: true },
+  { send: "/contact", text: "contact us", icon: false },
+];
+
+export const dropDownLinks = [
+  { send: "#philosophy", text: "brand philosophy" },
+  { send: "#tech", text: "product technology" },
+  { send: "#products", text: "all products" },
+  { send: "/wellness", text: "intibiome wellness" },
+  { send: "/active", text: "intibiome active" },
+  { send: "/agecare", text: "intibiome agecare" },
+  { send: "#articles", text: "article1" },
+  { send: "#articles", text: "article2" },
+  { send: "#articles", text: "article3" },
+  { send: "/contact", text: "contact us" },
+];
+
+export const footerLinks = [
+  { send: "/contact", text: "contact us" },
+  { send: "/faq", text: "faq" },
+  { send: "/map", text: "site map" },
+  { send: "/privacy", text: "privacy policy" },
+  { send: "/coockies", text: "cookies policy" },
+  { send: "/legal", text: "legal notice" },
+];
+
 export const titles = {
   philosophy: "we’re here to help",
   tech: "whatever your age. whatever your lifestyle. whatever your interests.",
@@ -36,37 +73,40 @@ export const products = [
   {
     contentText: "intibiome wellness daily intimate wash",
     buttonText: "wellness",
-    img: "",
-    alt: "",
+    buttonColor: "#389CD6",
+    img: wellness,
+    alt: "wellness product blue pack",
   },
   {
     contentText: "intibiome active extra protection intimate wash",
     buttonText: "active",
-    img: "",
-    alt: "",
+    buttonColor: "#309D5F",
+    img: active,
+    alt: "active product green pack",
   },
   {
     contentText: "intibiome agecare dryness relief intimate wash",
     buttonText: "agecare",
-    img: "",
-    alt: "",
+    buttonColor: "#EE6381",
+    img: agecare,
+    alt: "agecare product red pack",
   },
 ];
 
 export const articles = [
   {
     contentText: content.lorem,
-    img: "",
-    alt: "",
+    img: sport,
+    alt: "person with a wide smile wearing sports clothes in a sunny day",
   },
   {
     contentText: content.lorem,
-    img: "",
-    alt: "",
+    img: smile,
+    alt: "silver-haired person smiling in the winter",
   },
   {
     contentText: content.lorem,
-    img: "",
-    alt: "",
+    img: droplet,
+    alt: "blue droplets on a white background",
   },
 ];

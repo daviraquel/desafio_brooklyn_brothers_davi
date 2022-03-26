@@ -1,0 +1,18 @@
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+#dropDownMenu {
+  background-color: #389cd6;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  animation: growDown 500ms ease-in-out forwards;
+  transform-origin: top center;
+}

@@ -1,6 +1,6 @@
-export const ArticleCard = ({ contentText, img, alt }) => {
+export const ArticleCard = ({ className, contentText, img, alt }) => {
   return (
-    <div>
+    <div className={className}>
       <img src={img} alt={alt} />
       <p>{contentText}</p>
     </div>

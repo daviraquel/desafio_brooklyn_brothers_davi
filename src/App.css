@@ -26,7 +26,7 @@
   --unnamed-character-spacing-0-78: 0.78px;
   --unnamed-character-spacing-0-96: 0.96px;
   --unnamed-character-spacing-0-32: 0.32px;
-  --unnamed-character-spacing-0-4: 0.4px;
+  --unnamed-character-spacing-0-4: 0.2px;
   --unnamed-line-spacing-22: 22px;
   --unnamed-line-spacing-28: 28px;
   --unnamed-line-spacing-36: 36px;
@@ -34,9 +34,11 @@
   --unnamed-line-spacing-50: 50px;
   --unnamed-line-spacing-70: 70px;
   --text-margin: 40px;
+  --text-padding: 0.5em;
 
   /* Univesal text styling */
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 /* Character Styles */
@@ -58,6 +60,7 @@ h3 {
   line-height: var(--unnamed-line-spacing-40);
   letter-spacing: var(--unnamed-character-spacing-0-62);
   margin: var(--text-margin) 0;
+  padding: var(--text-padding);
   color: var(--unnamed-color-549bd1);
 }
 h4 {
@@ -77,8 +80,8 @@ p {
   font-size: var(--unnamed-font-size-16);
   line-height: var(--unnamed-line-spacing-22);
   letter-spacing: var(--unnamed-character-spacing-0-32);
-  color: var(--unnamed-color-9d8d8d);
-  padding-bottom: var(--text-margin);
+  color: var(--dark-gray);
+  padding: 0 var(--text-padding) var(--text-margin);
 }
 
 .p-large {
@@ -88,7 +91,19 @@ p {
   font-size: var(--unnamed-font-size-20);
   line-height: var(--unnamed-line-spacing-28);
   letter-spacing: var(--unnamed-character-spacing-0-4);
-  color: var(--unnamed-color-9d8d8d);
+}
+
+a {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-16) / var(--unnamed-line-spacing-22)
+    var(--unnamed-font-family-trebuchet-ms);
+  letter-spacing: var(--unnamed-character-spacing-0-32);
+  color: var(--white);
+  text-align: center;
+  opacity: 1;
+  line-height: 48px;
+  text-decoration: none;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -103,12 +118,8 @@ p {
   }
 
   p {
-    font-family: var(--unnamed-font-family-trebuchet-ms);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-normal);
     font-size: var(--unnamed-font-size-20);
     line-height: var(--unnamed-line-spacing-28);
     letter-spacing: var(--unnamed-character-spacing-0-4);
-    color: var(--unnamed-color-9d8d8d);
   }
 }

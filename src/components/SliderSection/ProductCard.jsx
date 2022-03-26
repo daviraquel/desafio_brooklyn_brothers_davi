@@ -1,9 +1,16 @@
-export const ProductCard = ({ contentText, buttonText, img, alt }) => {
+export const ProductCard = ({
+  className,
+  contentText,
+  buttonText,
+  buttonColor,
+  img,
+  alt,
+}) => {
   return (
-    <div>
+    <div className={className}>
       <img src={img} alt={alt} />
-      <p>{contentText}</p>
-      <button>{buttonText}</button>
+      <p className="p-large">{contentText}</p>
+      <button style={{ backgroundColor: buttonColor }}>{buttonText}</button>
     </div>
   );
 };

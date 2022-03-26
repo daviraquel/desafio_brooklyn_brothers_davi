@@ -1,0 +1,21 @@
+#mobileHeader {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0px 4px 16px #00000014;
+  position: relative;
+}
+
+#mobileHeader .logo {
+  height: 58px;
+}
+
+#mobileHeader button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  height: 24px;
+}

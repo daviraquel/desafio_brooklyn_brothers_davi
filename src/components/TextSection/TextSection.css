@@ -1,7 +1,13 @@
 .textSection {
-  margin: 0 4.2vw;
+  margin: 0 auto;
+  max-width: 392px;
 }
 
-#philosophy {
-  max-width: 392px;
+@media screen and (min-width: 768px) {
+  #philosophy {
+    max-width: 550px;
+  }
+  #tech {
+    max-width: 744px;
+  }
 }
