@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-import { DesktopHeader } from "./DesktopHeader";
-import { MobileHeader } from "./MobileHeader";
+import { DesktopHeader } from "./Desktop/DesktopHeader";
+import { MobileHeader } from "./Mobile/MobileHeader";
 
 export const Header = () => {
   const [windowSize, setWindowSize] = useState(window.innerWidth);

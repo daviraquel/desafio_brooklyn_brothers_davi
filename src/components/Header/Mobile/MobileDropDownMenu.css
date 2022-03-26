@@ -15,4 +15,16 @@
   top: 70px;
   animation: growDown 500ms ease-in-out forwards;
   transform-origin: top center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 111px;
+  gap: 20px;
+  transition: 500ms animation;
+}
+
+#dropDownMenu a {
+  padding: 15px 24px 13px;
+  text-align: left;
+  margin-left: 16px;
 }

@@ -11,13 +11,28 @@ import smile from "../img/articles/smile.png";
 import droplet from "../img/articles/droplet.png";
 
 export const headerLinks = [
-  { send: "#philosophy", text: "about us", icon: true },
-  { send: "#products", text: "our products", icon: true },
-  { send: "#articles", text: "intimate health", icon: true },
-  { send: "/contact", text: "contact us", icon: false },
+  {
+    id: "philosophyDropHover",
+    send: "#philosophy",
+    text: "about us",
+    icon: true,
+  },
+  {
+    id: "productsDropHover",
+    send: "#products",
+    text: "our products",
+    icon: true,
+  },
+  {
+    id: "articlesDropHover",
+    send: "#articles",
+    text: "intimate health",
+    icon: true,
+  },
+  { id: "contactLink", send: "/contact", text: "contact us", icon: false },
 ];
 
-export const dropDownLinks = [
+export const mobileDropDownLinks = [
   { send: "#philosophy", text: "brand philosophy" },
   { send: "#tech", text: "product technology" },
   { send: "#products", text: "all products" },
@@ -29,6 +44,25 @@ export const dropDownLinks = [
   { send: "#articles", text: "article3" },
   { send: "/contact", text: "contact us" },
 ];
+
+export const desktopDropDownLinks = {
+  about: [
+    { send: "#philosophy", text: "brand philosophy" },
+    { send: "#tech", text: "product technology" },
+  ],
+  products: [
+    { send: "#products", text: "all products" },
+    { send: "/wellness", text: "intibiome wellness" },
+    { send: "/active", text: "intibiome active" },
+    { send: "/active", text: "intibiome agecare" },
+  ],
+  intimate: [
+    { send: "#article", text: "article 1" },
+    { send: "#article", text: "article 2" },
+    { send: "#article", text: "article 3" },
+    { send: "/faq", text: "faq" },
+  ],
+};
 
 export const footerLinks = [
   { send: "/contact", text: "contact us" },
@@ -48,8 +82,8 @@ export const titles = {
 
 export const content = {
   philosophy:
-    "When it comes to caring for our most intimate areas, we’ve lost our connection. Embarrassed, unwilling, or unable to communicate with others, we’re needlessly neglecting the parts of our bodies that need it most. We’re here to help. Providing you with the expertise, knowledge and products you need to feel confident in your personal care.",
-  tech: "Co-created with gynaecologists, our revolutionary products have been expertly developed to support your intimate microbiome and pH balance, and strengthen overall natural health. As the experts in intimate hygiene, we want to bring discussion about intimate wellness care out of the dark and demystify the taboos that surround it.",
+    "When it comes to caring for our most intimate areas, we’ve lost our connection. \n Embarrassed, unwilling, or unable to communicate with others, we’re needlessly neglecting the parts of our bodies that need it most. \n We’re here to help. Providing you with the expertise, knowledge and products you need to feel confident in your personal care.",
+  tech: "Co-created with gynaecologists, our revolutionary products have been expertly developed to support your intimate microbiome and pH balance, and strengthen overall natural health. \n As the experts in intimate hygiene, we want to bring discussion about intimate wellness care out of the dark and demystify the taboos that surround it.",
   lorem: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   article1: "our products",
 };

@@ -3,7 +3,7 @@
   flex-direction: row;
   height: 120px;
   justify-content: space-evenly;
-  margin: 0 4.2vw;
+  margin: 40px 4.2vw 0;
 }
 
 .icon {
@@ -18,7 +18,7 @@
 @media screen and (min-width: 768px) {
   #iconSection {
     height: 259px;
-    margin: 0 20.5vw;
+    margin: 40px 20.5vw 0;
   }
 
   .icon {

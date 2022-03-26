@@ -3,6 +3,14 @@
   max-width: 392px;
 }
 
+.textSection p:nth-child(2) {
+  padding-top: 0;
+}
+
+.textSection p:last-child {
+  padding-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   #philosophy {
     max-width: 550px;

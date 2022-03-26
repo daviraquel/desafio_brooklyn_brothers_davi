@@ -1,9 +1,13 @@
-.sliderSection h3 {
-  margin-bottom: 0;
+#products {
+  padding: 80px 0 25px;
 }
 
-#products {
-  padding-bottom: 45px;
+#articles {
+  padding: 40px 0 80px;
+}
+
+.sliderSection h3 {
+  margin: 0;
 }
 
 .sliderContainer {
@@ -39,10 +43,12 @@
 }
 
 .sliderSection button {
+  text-align: center;
   font: normal normal bold 25px/36px Trebuchet MS, sans-serif;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
   color: #ffffff;
   text-transform: lowercase;
+  opacity: 1;
   border: none;
   padding: 0;
 }
@@ -65,22 +71,25 @@
   width: 100%;
   max-width: 392px;
   border-radius: 16px;
-  margin: 20px auto 80px;
+  margin: 0 auto;
   background: #389cd6 0% 0% no-repeat padding-box;
 }
 
 @media screen and (min-width: 768px) {
-  #products {
-    padding-bottom: 100px;
-  }
   #buttonMore {
-    margin: 20px auto 120px;
     max-width: 356px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  #products {
+    padding: 120px 0 35px;
+  }
+  #articles {
+    padding: 120px 0 120px;
+  }
   .sliderContainer {
+    padding: 80px 0 85px;
     gap: 32px;
     justify-content: center;
   }

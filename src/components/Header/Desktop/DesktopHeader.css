@@ -1,0 +1,86 @@
+#desktopHeader div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 21.6vw;
+  height: 80px;
+  position: relative;
+}
+
+#desktopHeaderLogo {
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#desktopHeader button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  height: 24px;
+}
+
+#mainLinks {
+  background: #389cd6 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#desktopHeader ul {
+  flex-direction: row;
+  gap: 20px;
+  height: 48px;
+}
+
+#desktopHeader a,
+#desktopHeader p {
+  width: 190px;
+  line-height: 48px;
+}
+
+li {
+  background-color: transparent;
+}
+
+li img {
+  margin-left: 15px;
+}
+
+.desktopDropdown {
+  top: 128px;
+  position: absolute;
+  width: 100%;
+  padding-left: 20vw;
+  box-sizing: border-box;
+  justify-content: flex-start !important;
+  background: #9d8e8e 0% 0% no-repeat padding-box;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 500ms ease-in-out;
+}
+
+.desktopDropdown:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Displaying Drop Down on hover */
+
+#philosophyDropHover:hover ~ #aboutDropDown {
+  visibility: visible;
+  opacity: 1;
+}
+
+#productsDropHover:hover ~ #productsDropDown {
+  visibility: visible;
+  opacity: 1;
+}
+
+#articlesDropHover:hover ~ #intimateDropDown {
+  visibility: visible;
+  opacity: 1;
+}

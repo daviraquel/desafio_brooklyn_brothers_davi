@@ -33,7 +33,6 @@
   --unnamed-line-spacing-40: 40px;
   --unnamed-line-spacing-50: 50px;
   --unnamed-line-spacing-70: 70px;
-  --text-margin: 40px;
   --text-padding: 0.5em;
 
   /* Univesal text styling */
@@ -42,46 +41,25 @@
 }
 
 /* Character Styles */
-h1 {
-  font-family: var(--unnamed-font-family-trebuchet-ms);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-bold);
-  font-size: var(--unnamed-font-size-48);
-  line-height: var(--unnamed-line-spacing-70);
-  letter-spacing: var(--unnamed-character-spacing-0-96);
-  color: var(--unnamed-color-549bd1);
-}
-
 h3 {
-  font-family: var(--unnamed-font-family-trebuchet-ms);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-bold);
-  font-size: var(--unnamed-font-size-31);
+  text-align: center;
+  font: normal normal bold 31px/40px Trebuchet MS, sans-serif;
+  letter-spacing: 0.62px;
+  color: #389cd6;
+  opacity: 1;
   line-height: var(--unnamed-line-spacing-40);
-  letter-spacing: var(--unnamed-character-spacing-0-62);
-  margin: var(--text-margin) 0;
-  padding: var(--text-padding);
-  color: var(--unnamed-color-549bd1);
-}
-h4 {
-  font-family: var(--unnamed-font-family-trebuchet-ms);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-bold);
-  font-size: var(--unnamed-font-size-25);
-  line-height: var(--unnamed-line-spacing-36);
-  letter-spacing: var(--unnamed-character-spacing-0-5);
+  margin: 80px 0 40px;
   color: var(--unnamed-color-549bd1);
 }
 
 p {
-  font-family: var(--unnamed-font-family-trebuchet-ms);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-normal);
-  font-size: var(--unnamed-font-size-16);
-  line-height: var(--unnamed-line-spacing-22);
-  letter-spacing: var(--unnamed-character-spacing-0-32);
   color: var(--dark-gray);
-  padding: 0 var(--text-padding) var(--text-margin);
+  text-align: center;
+  font: normal normal normal 16px/22px Trebuchet MS, sans-serif;
+  letter-spacing: 0.32px;
+  color: #7b7070;
+  opacity: 1;
+  padding: 0.5em;
 }
 
 .p-large {
@@ -101,25 +79,26 @@ a {
   color: var(--white);
   text-align: center;
   opacity: 1;
-  line-height: 48px;
   text-decoration: none;
   display: block;
 }
 
 @media screen and (min-width: 768px) {
   h3 {
-    font-family: var(--unnamed-font-family-trebuchet-ms);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-39);
     line-height: var(--unnamed-line-spacing-50);
     letter-spacing: var(--unnamed-character-spacing-0-78);
     color: var(--unnamed-color-549bd1);
+    text-align: center;
+    font: normal normal bold 39px/50px Trebuchet MS, sans-serif;
+    letter-spacing: 0.78px;
+    opacity: 1;
   }
 
   p {
-    font-size: var(--unnamed-font-size-20);
-    line-height: var(--unnamed-line-spacing-28);
-    letter-spacing: var(--unnamed-character-spacing-0-4);
+    color: var(--dark-gray);
+    text-align: center;
+    font: normal normal normal 20px/28px Trebuchet MS, sans-serif;
+    letter-spacing: 0.4px;
+    padding: 0.5em;
   }
 }
