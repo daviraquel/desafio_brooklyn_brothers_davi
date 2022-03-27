@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { SearchInput } from "../SearchInput";
 
 import "./MobileHeader.css";
 import mobileHeaderLogo from "../../../img/logos/mobileHeaderLogo.png";
@@ -11,14 +10,9 @@ import { MobileDropDownMenu } from "./MobileDropDownMenu";
 
 export const MobileHeader = () => {
   const [menuOn, setMenuOn] = useState(false);
-  const [searchOn, setSearchOn] = useState(false);
 
   const handleMenu = () => {
     setMenuOn(!menuOn);
-  };
-
-  const handleSearch = () => {
-    setSearchOn(!menuOn);
   };
 
   return (
@@ -31,11 +25,10 @@ export const MobileHeader = () => {
         src={mobileHeaderLogo}
         alt="Intibiome: co-developed with gynaecologists"
       />
-      <button onClick={handleSearch}>
+      <button>
         <img src={searchIcon} alt="search" />
       </button>
       {menuOn ? <MobileDropDownMenu handleMenu={handleMenu} /> : null}
-      {searchOn ? <SearchInput handleMenu={handleSearch} /> : null}
     </header>
   );
 };

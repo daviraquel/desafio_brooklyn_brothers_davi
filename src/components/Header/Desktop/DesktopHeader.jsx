@@ -31,7 +31,11 @@ export const DesktopHeader = () => {
           </li>
         ))}
 
-        <ul id="aboutDropDown" className="desktopDropdown">
+        <ul
+          id="aboutDropDown"
+          className="desktopDropdown"
+          data-testid="aboutDropDown"
+        >
           {desktopDropDownLinks.about.map((item, index) => (
             <li key={index}>
               <DesktopHeaderLink send={item.send} text={item.text} />
