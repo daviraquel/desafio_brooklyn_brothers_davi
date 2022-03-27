@@ -48,7 +48,7 @@ h3 {
   color: #389cd6;
   opacity: 1;
   line-height: var(--unnamed-line-spacing-40);
-  margin: 80px 0 40px;
+  margin: 40px 0 32px;
   color: var(--unnamed-color-549bd1);
 }
 
@@ -92,6 +92,7 @@ a {
     font: normal normal bold 39px/50px Trebuchet MS, sans-serif;
     letter-spacing: 0.78px;
     opacity: 1;
+    margin: 80px 0 40px;
   }
 
   p {
