@@ -15,5 +15,5 @@ export const Header = () => {
     return () => window.removeEventListener("resize", updateSize);
   });
 
-  return windowSize > 768 ? <DesktopHeader /> : <MobileHeader />;
+  return windowSize > 1024 ? <DesktopHeader /> : <MobileHeader />;
 };
